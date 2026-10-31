@@ -30,12 +30,11 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         {children}
-       <Script
-          src={`${process.env.NEXT_PUBLIC_APP_URL}/chatBot.js`}
-          data-owner-id="usr_132402942937399305"
+        <Script
+          src="https://support-ai-rose.vercel.app/chatBot.js" data-owner-id="usr_132402942937399305"
           strategy="afterInteractive"
         />
-      </body>
-    </html>
+    </body>
+    </html >
   );
 }
